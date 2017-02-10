@@ -35,6 +35,8 @@ exclude_paths:
   #- */jquery/*
   - css/bootstrap.css
   - css/bootstrap-theme.css
+  - js/angular.js
+  - js/bootstrap.js
 
   # examples of minified files that should be excluded
   - js/**.min.js
