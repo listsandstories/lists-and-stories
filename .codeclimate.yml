@@ -24,4 +24,17 @@ ratings:
   - "**.php"
   - "**.py"
   - "**.rb"
-exclude_paths: []
+exclude_paths:
+# examples of auto-generated exclusions
+- db/*
+- spec/*
+- tests/*
+- vendor/*
+
+# examples of third party libraries that should be excluded
+- */jquery/*
+- */bootstrap/*
+
+# examples of minified files that should be excluded
+- **.min.js
+- **.min.css
