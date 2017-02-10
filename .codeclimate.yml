@@ -33,7 +33,8 @@ exclude_paths:
 
   # examples of third party libraries that should be excluded
   #- */jquery/*
-  - */bootstrap/*
+  - */css/bootstrap.css
+  - */css/bootstrap-theme.css
 
   # examples of minified files that should be excluded
   - **.min.js
