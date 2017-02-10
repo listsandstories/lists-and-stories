@@ -32,7 +32,7 @@ exclude_paths:
   - vendor/*
 
   # examples of third party libraries that should be excluded
-  - */jquery/*
+  #- */jquery/*
   - */bootstrap/*
 
   # examples of minified files that should be excluded
