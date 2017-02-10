@@ -1,10 +1,608 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Lists and Stories</title>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- AngularJS -->
+    <script src="../js/angular.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css"/>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- W3 -->
+    <script src="../js/w3data.js"></script>
+
+
 </head>
 <body>
-$END$
+
+<div w3-include-html="../includes/nav.html"></div>
+
+<script>
+    w3IncludeHTML();
+</script>
+<div class="container-fluid">
+    <div class="col-md-8">
+        <span style="font-size: 18px;"><span style="color: rgb(0, 0, 205);"><span style="font-size: 20px;"><strong><em>News and Current Events Links</em></strong></span></span><br/>
+	</span><br/>
+        <strong style="line-height: 16.79px;"><span style="font-size: 14px;"><em><span style="font-size: 16px;">Television</span></em></span></strong><br/>
+        <span style="font-size: 18px;"><strong><u><a href="http://abcnews.go.com" target="_blank">ABC News</a></u>&nbsp; abcnews.go.com </strong><br/>
+	<strong><a href="http://www.cbsnews.com"
+               target="_blank"><u>CBS News</u></a>&nbsp; www.cbsnews.com (transcripts) *</strong><br/>
+	<strong><a href="http://www.nbcnews.com"
+               target="_blank"><u>NBC News</u></a>&nbsp; www.nbcnews.com (transcripts) *</strong><br/>
+	<strong><a href="http://www.foxnews.com"
+               target="_blank"><u>FOX News</u></a>&nbsp; www.foxnews.com (transcripts) *</strong><br/>
+	<strong><a href="http://www.pbs.org/topics/news-politics" target="_blank"><u>PBS News-Politics</u></a>&nbsp; www.pbs.org/topics/news-politics<br/>
+	<a href="http://www.pbs.org/newshour" target="_blank"><u>PBS NewsHour</u></a>&nbsp; www.pbs.org/newshour (transcripts) *<br/>
+	<a href="http://www.npr.org/sections/news" target="_blank"><u>NPR News</u></a>&nbsp; www.npr.org/sections/news (transcripts) *</strong><br/>
+	<strong><a href="http://www.cnn.com"
+               target="_blank"><u>CNN</u></a>&nbsp; www.cnn.com (daily, transcripts) *</strong><br/>
+	</span><span style="font-size: 18px;"><strong><u><a href="http://www.cnbc.com" target="_blank">CNBC</a></u>&nbsp; www.cnbc.com<br/>
+	<a href="http://www.bloomberg.com" target="_blank"><u>Bloomberg</u></a>&nbsp; www.bloomberg.com<br/>
+	<a href="http://www.c-span.org" target="_blank">C-SPAN</a>&nbsp; www.c-span.org</strong></span><br/>
+        <br/>
+        <strong style="line-height: 16.79px;"><span style="font-size: 14px;"><em><span style="font-size: 16px;">News Services</span></em></span></strong><br/>
+        <strong style="line-height: 22.9px; font-size: 18.18px;"><a href="http://www.afp.com/en" target="_blank">AFP</a>&nbsp;
+            www.afp.com/en </strong><br style="line-height: 16.79px;"/>
+        <span style="font-size: 18px;"><strong><u><a
+                href="http://hosted.ap.org/dynamic/fronts/HOME?SITE=AP&amp;SECTION=HOME" target="_blank">AP</a></u>&nbsp; ap.org<br/>
+	</strong></span><strong style="line-height: 22.9px; font-size: 18.18px;"><a href="http://www.reuters.com"
+                                                                                target="_blank"><u>Reuters</u></a>&nbsp;
+        www.reuters.com </strong><br/>
+        <br/>
+        <strong style="line-height: 16.79px;"><span style="font-size: 14px;"><em><span style="font-size: 16px;">Newspapers</span></em></span></strong><br/>
+        <span style="font-size: 18px;"><strong> <a href="http://www.nytimes.com"
+                                                   target="_blank"><u>New York Times</u></a>&nbsp; www.nytimes.com<br/>
+	<a href="http://www.washingtonpost.com" target="_blank"><u>Washington Post</u></a>&nbsp; www.washingtonpost.com<br/>
+	<a href="http://www.latimes.com" target="_blank"><u>Los Angeles Times</u></a>&nbsp; www.latimes.com<br/>
+	<a href="http://www.chicagotribune.com" target="_blank"><u>Chicago Tribune</u></a>&nbsp; www.chicagotribune.com<br/>
+	</strong></span><strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.csmonitor.com"
+                                                                             target="_blank"><u>Christian Science
+        Monitor</u></a>&nbsp; www.csmonitor.com </strong><br/>
+        <span style="font-size: 18px;"><strong><u><a href="http://www.dallasnews.com" target="_blank">Dallas Morning News</a></u>&nbsp; www.dallasnews.com *<br/>
+	<a href="http://www.star-telegram.com" target="_blank"><u>Fort Worth Star Telegram</u></a>&nbsp; www.star-telegram.com *<br/>
+	<a href="http://www.statesman.com"
+       target="_blank"><u>Austin American-Statesman</u></a>&nbsp; www.statesman.com *</strong></span><br/>
+        <br/>
+        <strong style="line-height: 16.79px;"><span style="font-size: 14px;"><em><span style="font-size: 16px;">Magazines</span></em></span></strong><br/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://www.theatlantic.com" target="_blank">The
+            Atlantic</a></u>&nbsp; www.theatlantic.com (monthly) *</strong><br/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.currenthistory.com"
+                                                                 target="_blank"><u>Current History</u></a>&nbsp;
+            www.currenthistory.com (monthly)</strong><br/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://harpers.org/departments/harpers-index/"
+                                                                    target="_blank">Harper's Index</a></u>&nbsp;
+            harpers.org/departments/harpers-index/</strong><br style="line-height: 16.79px;"/>
+        <span style="font-size: 18px;"><strong><u><a href="http://www.motherearthnews.com" target="_blank">Mother Earth News</a></u>&nbsp; www.motherearthnews.com (bi-monthly) *</strong></span><br/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.thenation.com" target="_blank">The
+            Nation</a>&nbsp; www.thenation.com (weekly)</strong><br style="line-height: 16.79px;"/>
+        <u style="line-height: 22.9px; font-size: 18.18px;"><strong><a href="http://www.nationalgeographic.com"
+                                                                       target="_blank">National Geographic</a></strong></u><strong
+            style="line-height: 22.9px; font-size: 18.18px;">&nbsp; www.nationalgeographic.com (monthly)</strong><br
+            style="line-height: 22.9px; font-size: 18.18px;"/>
+        <span style="font-size: 18px;"><strong><a href="http://www.newrepublic.com" target="_blank"><u>New Republic</u></a>&nbsp; www.newrepublic.com (bi-weekly) *<br/>
+	</strong></span><span style="font-size: 18px;"><strong><u><a href="http://www.newsweek.com" target="_blank">Newsweek Global</a></u>&nbsp; www.newsweek.com *</strong></span><br
+            style="line-height: 16.79px;"/>
+        <span style="font-size: 18px;"><strong><u><a href="http://www.newyorker.com" target="_blank">The New Yorker</a></u>&nbsp; www.newyorker.com (weekly) *</strong></span><br/>
+        <strong style="line-height: 22.9px; font-size: 18.18px;"><a href="http://www.scientificamerican.com"
+                                                                    target="_blank">Scientific American</a>&nbsp;
+            www.scientificamerican.com (monthly)</strong><br style="line-height: 22.9px; font-size: 18.18px;"/>
+        <strong style="line-height: 22.9px; font-size: 18.18px;"><u><a href="http://www.smithsonianmag.com"
+                                                                       target="_blank">Smithsonian</a></u>&nbsp;
+            www.smithsonianmag.com (monthly) *</strong><br style="line-height: 22.9px; font-size: 18.18px;"/>
+        <span style="font-size: 18px;"><strong><a href="http://www.texasobserver.org" target="_blank">Texas Observer</a>&nbsp; www.texasobserver.org</strong></span><br
+            style="line-height: 16.79px;"/>
+        <span style="font-size: 18px;"><strong><u><a href="http://www.time.com/time"
+                                                     target="_blank">Time Magazine</a></u>&nbsp; www.time.com/time</strong></span><br
+            style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.usnews.com" target="_blank">US News
+            &amp; World Report</a>&nbsp; www.usnews.com (weekly)</strong><br style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://theweek.com" target="_blank">The
+            Week</a></u>&nbsp; theweek.com (weekly)</strong><br/>
+        <br/>
+        <strong style="line-height: 16.79px;"><span style="font-size: 14px;"><em><span
+                style="font-size: 16px;">Online</span></em></span></strong><br/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.globalpost.com" target="_blank">GlobalPost</a>&nbsp;
+            www.globalpost.com</strong><br style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://news.google.com" target="_blank">Google
+            News</a>&nbsp; news.google.com</strong><br style="line-height: 16.79px;"/>
+        <strong style="line-height: 1.4; font-size: 18px;"><u><a href="http://www.podcastdirectory.com" target="_blank">Podcast
+            Directory</a></u>&nbsp; www.podcastdirectory.com</strong><br style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://www.ozy.com"
+                                                                    target="_blank">OZY</a></u>&nbsp;
+            www.ozy.com</strong><br/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://qz.com" target="_blank"><u>Quartz</u></a>&nbsp;
+            qz.com</strong><br/>
+        <span style="font-size: 18px;"><strong><u><a href="http://www.pewstates.org/projects/stateline" target="_blank">Stateline</a></u>&nbsp; www.pewstates.org/projects/stateline (daily, Pew Charitable Trust) *</strong></span><br/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://news.vice.com" target="_blank">Vice
+            News</a>&nbsp; news.vice.com</strong><br/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://www.vox.com"
+                                                                    target="_blank">Vox</a></u>&nbsp;
+            www.vox.com</strong><br/>
+        <span style="font-size: 18px;"><strong><u><a href="http://en.wikipedia.org/wiki/Portal:Current_events"
+                                                     target="_blank">Wikipedia Current Events</a></u>&nbsp; en.wikipedia.org/wiki/Portal:Current_events</strong></span><br/>
+        <span style="font-size: 18px;"><strong><u><a href="http://www.thewire.com/"
+                                                     target="_blank">The Wire</a></u></strong><strong>&nbsp; www.thewire.com (The Atlantic)</strong></span><br
+            style="line-height: 16.79px;"/>
+        <span style="font-size: 18px;"><strong><u><a href="http://www.worldpress.org" target="_blank">Worldpress.org</a></u></strong><strong>&nbsp; www.worldpress.org</strong></span><br/>
+        <br/>
+        <strong style="line-height: 16.79px;"><span style="font-size: 14px;"><em><span style="font-size: 16px;">International Sources</span></em></span></strong><br
+            style="line-height: 16.79px;"/>
+        <strong style="font-size: 18px; line-height: 25.2px;"><a href="http://www.aljazeera.com/news/" target="_blank">Al
+            Jazeera</a>&nbsp; www.aljazeera.com/news/</strong><br/>
+        <strong style="line-height: 22.9px; font-size: 18.18px;"><strong
+                style="line-height: 22.9px; font-size: 18.18px;"><a href="https://english.alarabiya.net/"
+                                                                    target="_blank">Al Arabiya</a>&nbsp;
+            english.alarabiya.net</strong><br style="line-height: 16.79px;"/>
+            <a href="http://www.al-monitor.com" target="_blank">Al-Monitor</a>&nbsp; www.al-monitor.com</strong><br
+            style="line-height: 16.79px;"/>
+        <strong style="line-height: 22.9px; font-size: 18.18px;"><u><a href="http://allafrica.com" target="_blank">allAfrica</a></u>&nbsp;
+            allafrica.com</strong><br style="line-height: 16.79px;"/>
+        <strong style="font-size: 18px; line-height: 25.2px;"><a href="http://www.bbc.co.uk/news" target="_blank"><u>BBC
+            News</u></a>&nbsp; www.bbc.co.uk/news</strong><br/>
+        <strong style="font-size: 18px; line-height: 25.2px;">-&nbsp;<a
+                href="http://news.bbc.co.uk/2/hi/country_profiles/default.stm" target="_blank">BBC News Country
+            Profiles</a>&nbsp; news.bbc.co.uk/2/hi/country_profiles/default.stm</strong><br/>
+        <span style="font-size: 18px;"><strong><a href="http://www.cbc.ca/news" target="_blank">CBC News</a>&nbsp; www.cbc.ca/news (Canada)</strong></span><br
+            style="line-height: 16.79px;"/>
+        <strong style="font-size: 18px; line-height: 25.2px;"><a href="http://english.cctv.com/" target="_blank">CCTV
+            News</a>&nbsp; english.cctv.com (China)</strong><br/>
+        <span style="font-size: 18px;"><strong><u><a href="http://www.chinadaily.com.cn" target="_blank">China Daily</a></u>&nbsp; www.chinadaily.com.cn (China) *</strong></span><br
+            style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.dw.de/" target="_blank">Deutsche
+            Welle</a>&nbsp; www.dw.de (Germany)</strong><br style="line-height: 16.79px;"/>
+        <strong style="line-height: 22.9px; font-size: 18.18px;"><u><a href="http://www.economictimes.indiatimes.com"
+                                                                       target="_blank">The Economic Times</a></u>&nbsp;
+            www.economictimes.indiatimes.com (India) *</strong><br style="line-height: 16.79px;"/>
+        <strong style="line-height: 22.9px; font-size: 18.18px;"><a href="http://www.geeskaafrika.com/" target="_blank">Geeska
+            Afrika</a>&nbsp; www.geeskaafrika.com (Horn of Africa: Somalia, Djibouti, Eritrea, Ethiopia, Sudan, Kenya,
+            Uganda)</strong><br style="line-height: 16.79px;"/>
+        <span style="font-size: 18px;"><strong><u><a href="http://www.theguardian.com/uk"
+                                                     target="_blank">The Guardian</a></u>&nbsp; www.theguardian.com/uk (UK) *</strong></span><br
+            style="line-height: 16.79px;"/>
+        <span style="font-size: 18px;"><strong><a href="http://www.independent.co.uk/"
+                                                  target="_blank">The Independent</a>&nbsp; www.independent.co.uk (UK) *</strong></span><br
+            style="line-height: 16.79px;"/>
+        <strong style="line-height: 22.9px; font-size: 18.18px;"><a href="http://www.lapress.org" target="_blank">Latinamerica
+            Press</a>&nbsp; www.lapress.org (Peru)</strong><br style="line-height: 16.79px;"/>
+        <span style="font-size: 18px;"><strong><a href="http://www.thetimes.co.uk"
+                                                  target="_blank">The Times of London</a>&nbsp; www.thetimes.co.uk (UK)</strong></span><br
+            style="line-height: 16.79px;"/>
+        <span style="font-size: 18px;"><strong><a href="http://www.rt.com" target="_blank">RT</a>&nbsp; www.rt.com (Russia)</strong></span><br
+            style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.spiegel.de/international/index.html"
+                                                                 target="_blank">Spiegel Online</a>&nbsp;
+            www.spiegel.de/international/index.html (Germany)</strong><br style="line-height: 16.79px;"/>
+        <span style="font-size: 18px;"><strong><a href="http://timesofindia.indiatimes.com/international-home"
+                                                  target="_blank">The Times of India</a>&nbsp; www.timesofindia.indiatimes.com/international-home (India) *</strong></span><br/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.xinhuanet.com/english/"
+                                                                 target="_blank">Xinhuanet</a>&nbsp;
+            www.xinhuanet.com/english/ (China)</strong><br style="line-height: 16.79px;"/>
+        <br style="line-height: 16.79px;"/>
+        <strong style="color: rgb(0, 0, 0); line-height: 16.79px; font-size: 11.81px;"><span
+                style="font-size: 14px;"><em><span
+                style="font-size: 16px;">Weekly Programs</span></em></span></strong><br
+            style="color: rgb(0, 0, 0); line-height: 15.27px; font-size: 11.81px;"/>
+        <span style="line-height: 16.79px; font-size: 18px;"><strong><a
+                href="http://www.cnn.com/shows/fareed-zakaria-gps" target="_blank">Fareed Zakaria GPS (CNN)</a>&nbsp; www.cnn.com/shows/</strong></span><font
+            size="4"><span style="line-height: 25.2px;"><b>fareed-zakaria-gps</b></span></font><br
+            style="line-height: 16.79px;"/>
+        <span style="line-height: 16.79px; font-size: 18px;"><span style="line-height: 16.79px;"><strong><a
+                href="http://www.bbc.co.uk/programmes/p02dbd4m" target="_blank">Newshour Extra (BBC World Service)</a>&nbsp; www.bbc.co.uk/programmes/</strong></span><font
+                size="4"><span style="line-height: 25.2px;"><b>p02dbd4m</b></span></font><br
+                style="line-height: 16.79px;"/>
+	<span style="line-height: 16.79px;"><strong><a href="http://www.aljazeera.com/programmes/listeningpost/"
+                                                   target="_blank">The Listening Post (Al Jazeera)</a>&nbsp; www.aljazeera.com/programmes/</strong></span><span
+                    style="line-height: 25.2px;"><b>listeningpost/</b></span><br style="line-height: 16.79px;"/>
+	<strong><a href="http://www.cbsnews.com/face-the-nation"
+               target="_blank">Face the Nation (CBS)</a>&nbsp;&nbsp;</strong></span><font size="4"><span
+            style="line-height: 25.2px;"><b>www.cbsnews.com/face-the-nation</b></span></font><br
+            style="line-height: 16.79px;"/>
+        <span style="line-height: 16.79px; font-size: 18px;"><strong><a href="http://abcnews.go.com/ThisWeek/"
+                                                                        target="_blank">This Week with George Stephanopoulos (ABC)</a>&nbsp;&nbsp;</strong></span><font
+            size="4"><span style="line-height: 25.2px;"><b>abcnews.go.com/ThisWeek/</b></span></font><br
+            style="line-height: 16.79px;"/>
+        <span style="line-height: 16.79px; font-size: 18px;"><strong><a href="http://www.nbcnews.com/meet-the-press"
+                                                                        target="_blank">Meet the Press (NBC)</a>&nbsp;&nbsp;</strong></span><font
+            size="4"><b>www.nbcnews.com/meet-the-press</b></font><br/>
+        <span style="line-height: 16.79px; font-size: 18px;"><span style="line-height: 16.79px;"><strong><a
+                href="http://www.pbs.org/weta/washingtonweek/"
+                target="_blank">Washington Week (PBS)</a>&nbsp;&nbsp;</strong></span><font size="4"><span
+                style="line-height: 25.2px;"><b>www.pbs.org/weta/washingtonweek/</b></span></font><br
+                style="line-height: 16.79px;"/>
+	<strong><a href="http://www.thirteen.org/openmind/"
+               target="_blank">The Open Mind</a> (PBS)&nbsp;&nbsp;</strong></span><font size="4"><span
+            style="line-height: 25.2px;"><b>www.thirteen.org/openmind/</b></span></font><br
+            style="line-height: 16.79px;"/>
+        <span style="line-height: 16.79px; font-size: 18px;"><strong><a
+                href="http://www.foxnews.com/on-air/fox-news-sunday-chris-wallace/" target="_blank">Fox News Sunday with Chris Wallace (FOX)</a>&nbsp;&nbsp;</strong></span><font
+            size="4"><b>www.foxnews.com/on-air/fox-news-sunday-chris-wallace/</b></font><br/>
+        <br style="line-height: 16.79px;"/>
+        <strong style="line-height: 16.79px; font-size: 11.81px;"><span style="font-size: 14px;"><em><span
+                style="font-size: 16px;">Politics, International Relations</span></em></span></strong><br
+            style="line-height: 15.27px; font-size: 11.81px;"/>
+        <span style="font-size: 18px;"><strong><a href="http://ballotpedia.org" target="_blank">Ballotpedia</a>&nbsp; ballotpedia.org&nbsp;</strong></span><br
+            style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://www.commentarymagazine.com"
+                                                                    target="_blank">Commentary</a></u>&nbsp;
+            www.commentarymagazine.com (monthly) *</strong><br/>
+        <span style="font-size: 18px;"><strong><a href="http://cookpolitical.com/"
+                                                  target="_blank">Cook Political Report</a>&nbsp; cookpolitical.com&nbsp;</strong></span><br
+            style="line-height: 16.79px;"/>
+        <span style="font-size: 18px;"><strong><a href="http://www.countrywatch.com" target="_blank">CountryWatch</a>&nbsp; www.countrywatch.com&nbsp;</strong></span><br
+            style="line-height: 16.79px;"/>
+        <span style="font-size: 18px;"><strong><u><a href="http://www.thedailybeast.com"
+                                                     target="_blank">The Daily Beast</a></u>&nbsp; www.thedailybeast.com </strong></span><br
+            style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.democracynow.org/" target="_blank">Democracy
+            Now</a>&nbsp; www.democracynow.org</strong><br style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://thediplomat.com" target="_blank">The
+            Diplomat</a></u>&nbsp; thediplomat.com</strong><br style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://fivethirtyeight.com" target="_blank">FiveThirtyEight</a></u>&nbsp;
+            fivethirtyeight.com</strong><br style="line-height: 16.79px;"/>
+        <span style="font-size: 18px;"><strong><u><a href="http://www.foreignaffairs.com" target="_blank">Foreign Affairs</a></u>&nbsp; www.foreignaffairs.com (bimonthly, CFR) *</strong><br/>
+	<strong><a href="http://www.foreignpolicy.com" target="_blank"><u>Foreign Policy</u></a>&nbsp; www.foreignpolicy.com (bimonthly)</strong></span><br
+            style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://hir.harvard.edu" target="_blank">Harvard
+            International Review</a></u>&nbsp; hir.harvard.edu</strong><br style="line-height: 16.79px;"/>
+        <strong style="line-height: 22.9px; font-size: 18.18px;"><u><a href="http://thehill.com" target="_blank">The
+            Hill</a></u>&nbsp; thehill.com</strong><br/>
+        <strong style="line-height: 22.9px; font-size: 18.18px;"><a href="http://www.merip.org/" target="_blank">Middle
+            East Research and Information Project</a>&nbsp; www.merip.org</strong><br
+            style="line-height: 16.7999992370605px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://billmoyers.com" target="_blank">Moyers
+            &amp; Company</a></u>&nbsp; billmoyers.com</strong><br style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://www.thenation.com" target="_blank">The
+            Nation</a></u>&nbsp; www.thenation.com (weekly)</strong><br style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.nationalinterest.org/"
+                                                                 target="_blank">The National Interest</a>&nbsp;
+            www.nationalinterest.org (bimonthly)</strong><br style="line-height: 16.7999992370605px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.nationaljournal.com" target="_blank">NationalJournal</a>&nbsp;
+            www.nationaljournal.com (weekly)</strong><br/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://www.nationalreview.com"
+                                                                    target="_blank">National Review</a></u>&nbsp;
+            www.nationalreview.com (bi-weekly) *</strong><br/>
+        <strong style="line-height: 22.9px; font-size: 18.18px;"><u><a href="http://www.nolabels.org" target="_blank">No
+            Labels</a></u>&nbsp; www.nolabels.org</strong><br style="line-height: 16.79px;"/>
+        <strong style="line-height: 22.9px; font-size: 18.18px;"><u><a href="http://www.politico.com" target="_blank">Politico</a></u>&nbsp;
+            www.politico.com</strong><br/>
+        <strong style="line-height: 22.9px; font-size: 18.18px;"><u><a href="http://www.realclearpolitics.com"
+                                                                       target="_blank">Real Clear Politics</a></u>&nbsp;
+            www.realclearpolitics.com</strong><br/>
+        <strong style="line-height: 22.9px; font-size: 18.18px;"><a href="http://www.realclearworld.com"
+                                                                    target="_blank"><u>Real Clear World</u></a>&nbsp;
+            www.realclearworld.com</strong><br/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://reason.com" target="_blank">Reason</a></u>&nbsp;
+            reason.com (monthly)</strong><br style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.centerforpolitics.org/crystalball/"
+                                                                 target="_blank">Sabato's Crystal Ball</a>&nbsp;
+            www.centerforpolitics.org/crystalball/ (UVA)</strong><br style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://www.scotusblog.com" target="_blank">SCOTUSblog</a></u>&nbsp;
+            www.scotusblog.com</strong><br style="line-height: 16.79px;"/>
+        <span style="font-size: 18px;"><strong><u><a href="http://www.slate.com" target="_blank">Slate</a></u>&nbsp; www.slate.com *</strong></span><br
+            style="line-height: 16.79px;"/>
+        <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://talkingpointsmemo.com" target="_blank">Talking
+            Points Memo</a></u>&nbsp; talkingpointsmemo.com</strong></p>
+        <p style="line-height: 16.8px;">
+            <strong style="line-height: 16.79px;"><span style="font-size: 14px;"><em><span style="font-size: 16px;">Explore 20 Short Films about Voting online:</span></em></span></strong><br
+                style="line-height: 16.79px;"/>
+            <strong style="line-height: 22.9px; font-size: 18.18px;">&nbsp; --&nbsp;<a href="https://wethevoters.com/"
+                                                                                       target="_blank">We The Voters</a>&nbsp;
+                wethevoters.com</strong></p>
+        <div>
+            &nbsp;</div>
+        <p>
+            <strong style="line-height: 16.79px;"><span style="font-size: 14px;"><em><span style="font-size: 16px;">Business/Economics</span></em></span></strong><br/>
+            <strong style="line-height: 22.9px; font-size: 18.18px;"><a href="http://www.businessweek.com"
+                                                                        target="_blank">Bloomberg Business Week</a>&nbsp;
+                www.businessweek.com </strong><br style="line-height: 16.79px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.businessinsider.com"
+                                                                     target="_blank">Business Insider</a>&nbsp;
+                www.businessinsider.com</strong><br style="line-height: 16.79px;"/>
+            <span style="font-size: 18px;"><strong><u><a href="http://www.economist.com"
+                                                         target="_blank">The Economist</a></u>&nbsp; www.economist.com</strong></span><br
+                style="line-height: 16.79px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.fastcompany.com"
+                                                                     target="_blank"><u>Fast Company</u></a>&nbsp;
+                www.fastcompany.com</strong><br style="line-height: 16.79px;"/>
+            <span style="font-size: 18px;"><strong><u><a href="http://www.ft.com"
+                                                         target="_blank">Financial Times</a></u>&nbsp; www.ft.com (UK) *</strong></span><br
+                style="line-height: 16.79px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.forbes.com" target="_blank"><u>Forbes</u></a>&nbsp;
+                www.forbes.com</strong><br style="line-height: 16.79px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://fortune.com"
+                                                                     target="_blank">Fortune</a>&nbsp;
+                fortune.com</strong><br style="line-height: 16.79px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="https://www.gfmag.com/" target="_blank">Global
+                Finance</a>&nbsp; www.gfmag.com</strong><br style="line-height: 16.79px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://hbr.org" target="_blank">Harvard
+                Business Review</a></u>&nbsp; hbr.org</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.census.gov/popclock/"
+                                                                     target="_blank">U.S. and World Population Clock</a>&nbsp;
+                www.census.gov/popclock/</strong><br style="line-height: 16.79px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.usdebtclock.org/" target="_blank">U.S.
+                National Debt Clock</a>&nbsp; www.usdebtclock.org</strong><br style="line-height: 16.79px;"/>
+            <strong style="line-height: 22.9px; font-size: 18.18px;"><u><a href="http://wsj.com" target="_blank">The
+                Wall Street Journal</a></u>&nbsp; wsj.com</strong><br/>
+            <strong style="line-height: 16.79px;"><span style="font-size: 14px;"><em><span style="font-size: 16px;">Explore 20 Short Films about the Economy online or via Amazon Prime:</span></em></span></strong><br
+                style="line-height: 16.79px;"/>
+            <strong style="line-height: 22.9px; font-size: 18.18px;">&nbsp; --&nbsp;<a href="http://wetheeconomy.com"
+                                                                                       target="_blank">We The
+                Economy</a>&nbsp; wetheeconomy.com</strong></p>
+        <p>
+            <strong style="line-height: 16.79px;"><span style="font-size: 14px;"><em><span style="font-size: 16px;">Technology</span></em></span></strong><br
+                style="line-height: 16.79px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://cnet.com" target="_blank">Cnet</a>&nbsp;
+                cnet.com</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://engadget.com"
+                                                                     target="_blank">engadget</a>&nbsp;
+                engadget.com</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://gizmodo.com"
+                                                                     target="_blank"><strong><font
+                    size="4">Gizmodo</font></strong></a><strong><font size="4">&nbsp;
+                gizmodo.com</font></strong></strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://mashable.com" target="_blank"><strong>Mashable</strong></a><strong>
+                &nbsp; mashable.com</strong></strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><strong><font size="4"><a href="http://thenextweb.com"
+                                                                                            target="_blank">The Next
+                Web</a></font></strong><strong><font size="4">&nbsp; thenextweb.com</font></strong></strong><br
+                style="line-height: 16.7999992370605px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://recode.net"
+                                                                        target="_blank">Re/code</a></u>&nbsp; recode.net</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.siia.net/"
+                                                                     target="_blank">SIIA</a>&nbsp;
+                siia.net</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><strong><font size="4"><a
+                    href="http://techcrunch.com/" target="_blank">TechCrunch</a></font></strong><strong><font size="4">
+                &nbsp; techcrunch.com</font></strong></strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://theverge.com" target="_blank">The
+                Verge</a>&nbsp;&nbsp;theverge.com</strong><br/>
+            <strong style="line-height: 22.9px; font-size: 18.18px;"><u><a href="http://www.wired.com/magazine/"
+                                                                           target="_blank">Wired Magazine</a></u>&nbsp;
+                www.wired.com/magazine/ (monthly)</strong><br style="line-height: 16.79px;"/>
+            <br style="line-height: 16.79px;"/>
+            <strong style="line-height: 16.79px;"><span style="font-size: 14px;"><em><span style="font-size: 16px;">Satire</span></em></span></strong><br
+                style="line-height: 16.79px;"/>
+            <strong style="line-height: 22.9px; font-size: 18.18px;"><a href="http://www.theonion.com" target="_blank">The
+                Onion</a>&nbsp; www.theonion.com</strong><br style="line-height: 16.79px;"/>
+            <strong style="line-height: 22.9px; font-size: 18.18px;"><a
+                    href="http://www.cc.com/shows/the-daily-show-with-trevor-noah" target="_blank">The Daily Show with
+                Trevor Noah</a>&nbsp; www.cc.com/shows/</strong><strong
+                style="line-height: 22.9px; font-size: 18.18px;">the-daily-show-with-trevor-noah</strong><br
+                style="line-height: 16.79px;"/>
+            <strong style="line-height: 22.9px; font-size: 18.18px;"><a
+                    href="http://www.hbo.com/last-week-tonight-with-john-oliver#/" target="_blank">Last Week Tonight
+                with John Oliver</a>&nbsp; www.hbo.com/last-week-tonight-with-john-oliver#/</strong><br/>
+            <br style="line-height: 16.79px;"/>
+            <strong style="color: rgb(0, 0, 0); line-height: 16.79px; font-size: 11.81px;"><span
+                    style="font-size: 14px;"><em><span
+                    style="font-size: 16px;">Bias/Credibility/Ethics</span></em></span></strong><br
+                style="color: rgb(0, 0, 0); line-height: 15.27px; font-size: 11.81px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://allsides.com"
+                                                                     target="_blank">AllSides</a>&nbsp;
+                allsides.com</strong><br style="line-height: 16.79px; font-size: 11.81px;"/>
+            <strong style="color: rgb(0, 0, 0); line-height: 25.2px; font-size: 18px;"><a
+                    href="http://www.annenbergclassroom.org/" target="_blank">Annenberg Classroom (UPenn)</a> &nbsp;www.annenbergclassroom.org</strong><br
+                style="color: rgb(0, 0, 0); line-height: 16.79px; font-size: 11.81px;"/>
+            <strong style="color: rgb(0, 0, 0); line-height: 1.4; font-size: 18px;"><a href="http://www.revealnews.org"
+                                                                                       target="_blank"><span
+                    style="font-size: 18px;"><strong>Center for Investigative Reporting</strong></span></a><strong
+                    style="line-height: 1.4; font-size: 18px;">&nbsp; www.revealnews.org *</strong></strong><br/>
+            <strong style="color: rgb(0, 0, 0); line-height: 25.2px; font-size: 18px;"><a href="http://www.medialit.org"
+                                                                                          target="_blank">Center for
+                Media Literacy</a></strong><a href="http://www.medialit.org" style="line-height: 16.79px;"
+                                              target="_blank"><strong
+                style="color: rgb(0, 0, 0); line-height: 25.2px; font-size: 18px;">&nbsp;
+            www.medialit.org</strong></a><br style="color: rgb(0, 0, 0); line-height: 16.79px; font-size: 11.81px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.centerfornewsliteracy.org"
+                                                                     target="_blank">Center for News Literacy (SUNY
+                Stony Brook)</a></strong><strong style="color: rgb(0, 0, 0); line-height: 25.2px; font-size: 18px;">
+            &nbsp; www.centerfornewsliteracy.org</strong><br style="line-height: 16.79px;"/>
+            <strong style="line-height: 1.4; font-size: 18px;"><u><a href="http://www.publicintegrity.org"
+                                                                     style="line-height: 1.4; font-size: 18px;"
+                                                                     target="_blank">Center for Public Integrity</a></u></strong><strong
+                style="line-height: 1.4; font-size: 18px;">&nbsp; www.publicintegrity.org</strong><br/>
+            <strong style="line-height: 22.9px; font-size: 18.18px;"><a href="http://www.opensecrets.org"
+                                                                        target="_blank">Center for Responsive
+                Politics</a>&nbsp; www.opensecrets.org</strong><br style="line-height: 16.79px;"/>
+            <strong style="color: rgb(0, 0, 0); line-height: 25.2px; font-size: 18px;"><u><a
+                    href="http://www.commoncause.org" target="_blank">Common Cause</a></u>&nbsp;
+                www.commoncause.org</strong><a href="http://www.factcheck.org" style="line-height: 16.79px;"
+                                               target="_blank"><br
+                style="color: rgb(0, 0, 0); line-height: 15.27px; font-size: 11.81px;"/>
+            <strong style="line-height: 1.4; font-size: 18px;"><u>FactCheck (UPenn)</u></strong></a><strong
+                style="line-height: 1.4; font-size: 18px;">&nbsp; www.factcheck.org</strong><br/>
+            <strong style="line-height: 1.4; font-size: 18px;"><u><a href="http://www.flackcheck.org" target="_blank">FlackCheck
+                (UPenn)</a></u></strong><strong style="line-height: 1.4; font-size: 18px;">&nbsp;
+            www.flackcheck.org</strong><br style="line-height: 16.79px;"/>
+            <a href="http://www.imediaethics.org" style="line-height: 1.4;" target="_blank"><strong
+                    style="line-height: 25.2px; font-size: 18px;"><u>iMediaEthics</u></strong></a><strong
+                style="line-height: 25.2px; font-size: 18px;">&nbsp; www.imediaethics.org</strong><br/>
+            <strong style="line-height: 1.4; font-size: 18px;"><strong style="line-height: 1.4; font-size: 18px;"><span
+                    style="font-size: 18px;"><strong><a href="http://www.j-lab.org" target="_blank"><u>J-Lab (American University)</u></a>&nbsp; www.j-lab.org</strong></span></strong></strong><br/>
+            <strong style="line-height: 1.4; font-size: 18px;"><u><a href="http://www.politifact.com"
+                                                                     style="line-height: 1.4; font-size: 18px;"
+                                                                     target="_blank">PolitiFact</a></u></strong><strong
+                style="line-height: 1.4; font-size: 18px;">&nbsp; www.politifact.com</strong><br/>
+            <strong style="line-height: 1.4; font-size: 18px;"><u><a href="http://www.publicagenda.org"
+                                                                     style="line-height: 1.4; font-size: 18px;"
+                                                                     target="_blank">Public
+                Agenda</a></u></strong><strong style="line-height: 1.4; font-size: 18px;">&nbsp;
+            www.publicagenda.org</strong><br/>
+            <a href="http://www.sourcewatch.org" target="_blank"><strong style="line-height: 1.4; font-size: 18px;">SourceWatch</strong></a><strong
+                style="line-height: 1.4; font-size: 18px;">&nbsp; www.sourcewatch.org</strong><br
+                style="line-height: 16.79px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><u><a href="http://sunlightfoundation.com"
+                                                                        target="_blank">Sunlight Foundation</a></u>&nbsp;
+                sunlightfoundation.com</strong><br/>
+            <br/>
+            <strong style="line-height: 16.79px;"><span style="font-size: 14px;"><em><span style="font-size: 16px;">Polling</span></em></span></strong><br/>
+            <strong style="line-height: 1.4; font-size: 18px;"><a href="http://surveys.ap.org/" target="_blank">Associated
+                Press polls</a>&nbsp; surveys.ap.org</strong><br style="line-height: 16.79px;"/>
+            <strong style="line-height: 1.4; font-size: 18px;"><u><a href="http://www.gallup.com"
+                                                                     target="_blank">Gallup</a></u>&nbsp; www.gallup.com</strong><br/>
+            <strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.gfk.com/us" target="_blank">GfK</a>&nbsp;
+                www.gfk.com/us</strong><br style="line-height: 16.79px;"/>
+            <strong style="line-height: 1.4; font-size: 18px;"><u><a href="http://www.pollingreport.com"
+                                                                     style="line-height: 1.4; font-size: 18px;"
+                                                                     target="_blank">PollingReport</a></u></strong><strong
+                style="line-height: 1.4; font-size: 18px;">&nbsp; www.pollingreport.com</strong><br/>
+            <a href="http://www.publicpolicypolling.com" style="line-height: 1.4; font-size: 12px;"
+               target="_blank"><strong style="line-height: 25.2px; font-size: 18px;"><u>Public Policy
+                Polling</u></strong></a><strong style="line-height: 25.2px; font-size: 18px;">&nbsp;
+            www.publicpolicypolling.com</strong><br/>
+            <strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.rasmussenreports.com"
+                                                                  target="_blank">Rasmussen Reports</a>&nbsp;
+                www.rasmussenreports.com</strong><br style="line-height: 16.79px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://ropercenter.cornell.edu/"
+                                                                     target="_blank">Roper Center for Public Opinion
+                Research (Cornell)</a>&nbsp; www.ropercenter.cornell.edu</strong><br/>
+            <strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.surveyusa.com/" target="_blank">SurveyUSA</a>&nbsp;
+                www.surveyusa.com</strong><br/>
+            <strong style="line-height: 1.4; font-size: 18px;"><a href="http://worldpublicopinion.org/" target="_blank">World
+                Public Opinion</a>&nbsp; worldpublicopinion.org</strong></p>
+        <p>
+            <strong style="line-height: 1.4; font-size: 18px;"><em>* <span style="font-size: 20px;"><span
+                    style="color: rgb(0, 0, 205);">Databases available through PISD Library</span></span></em></strong><br/>
+            <strong><font size="4">Go to</font></strong> <strong style="line-height: 1.4; font-size: 18px;"><a
+                href="http://009.catalog.pisd.edu" target="_blank"><u>Plano ISD Library Resources</u></a>&nbsp;
+            009.catalog.pisd.edu (User "planoisd" PW "connect")</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a
+                    href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=n5h"
+                    target="_blank">Ebsco Databases</a>&nbsp; (including Academic Search Complete, </strong><strong
+                style="line-height: 25.2px; font-size: 18px;">Newspaper Source Plus, Student Research Center, MAS Ultra)
+            *</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a
+                    href="http://find.galegroup.com/menu/commonmenu.do?userGroupName=tlc109104098" target="_blank">Gale
+                Databases</a>&nbsp; (including General OneFile, Academic OneFile, </strong><strong
+                style="line-height: 25.2px; font-size: 18px;">Infotrak Newsstand, Student Resources In Context)
+            *</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a
+                    href="http://online.infobaselearning.com/Login.aspx?app=Infobase&amp;returnUrl=/Default.aspx"
+                    target="_blank"><u>World News Digest (Facts on File)</u></a> *</strong><br/>
+            <strong style="line-height: 1.4; font-size: 18px;"><a href="http://icof.infobaselearning.com"
+                                                                  target="_blank"><u>Issues &amp; Controversies (Facts
+                on File)</u></a>&nbsp; icof.infobaselearning.com *</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><u><a
+                    href="http://www.issues.acb-clio.com/Home/Default.aspx" target="_blank">Issues: Understanding
+                Controversy and Society (ABC-Clio)</a></u>&nbsp; www.issues.acb-clio.com/Home/Default.aspx
+                *</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a
+                    href="http://americangovernment.abc-clio.com/Authentication/LogOn?returnUrl=%2FHome"
+                    target="_blank"><u>American Government (ABC-Clio)</u></a>&nbsp;
+                www.issues.acb-clio.com/Home/Default.aspx *</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><u><a
+                    href="http://009.catalog.pisd.edu/opac-tmpl/pisd-opac/en/modules/DatabaseAlpha-koha.html"
+                    target="_blank">NewsBank Popular Periodicals (NewsBank)</a></u> *</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a
+                    href="http://infoweb.newsbank.com/iw-search/we/InfoWeb?p_product=AWNSE&amp;p_action=explore&amp;p_theme=aggregated5&amp;p_nbid=B4BA53RHMTI1NzI2NzE0Ny40NjI1NDk6MToxMzoxMi4yMjAuMjI0LjY2&amp;p_clear_search=&amp;s_search_type=keyword&amp;s_category=none&amp;d_refprod=NEWSARCHIVES&amp;f_clearContext=yes&amp;f_clearSearch=yes"
+                    target="_blank"><u>Access World News (NewsBank)</u></a> *<br/>
+                <br/>
+            </strong><strong style="line-height: 25.2px; font-size: 18px;"><strong><span style="color: rgb(0, 0, 205);"><span
+                style="font-size: 20px;"><em>Maps</em></span></span></strong><br/>
+            <a href="http://www.lib.utexas.edu/maps/" target="_blank"><strong style="line-height: 25.2px;">University of
+                Texas Perry-</strong></a></strong><a href="http://www.lib.utexas.edu/maps/" target="_blank"><span
+                style="font-size:18px;"><strong>Castañeda Library Map Collection</strong></span></a><strong
+                style="line-height: 25.2px; font-size: 18px;"><strong style="line-height: 25.2px;">&nbsp;
+            www.library.utexas.edu/maps/</strong></strong></p>
+        <p>
+            <strong style="line-height: 25.2px; font-size: 18px;"><strong><span style="color: rgb(0, 0, 205);"><span
+                    style="font-size: 20px;"><em>Photos</em></span></span></strong><br/>
+                <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.apimages.com" target="_blank">AP
+                    Images</a>&nbsp; www.apimages.com</strong><br/>
+                <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.bbc.co.uk/news/in_pictures/"
+                                                                         target="_blank">BBC News In Pictures</a>&nbsp;
+                    www.bbc.co.uk/news/in_</strong><strong style="line-height: 25.2px; font-size: 18px;">pictures/<br/>
+                    <strong><font size="4"><a href="http://images.google.com/hosted/life" target="_blank">Life Photo
+                        Archives by Google</a>&nbsp; images.google.com/hosted/life<br/>
+                        <strong><font size="4"><font color="#2a4e81"><a
+                                href="http://www.theguardian.com/artanddesign/photography" target="_blank">The
+                            Guardian</a></font>&nbsp; www.theguardian.com/artanddesign/photography<br/>
+                        </font></strong></font></strong></strong></strong><strong
+                style="line-height: 25.2px; font-size: 18px;"><strong style="line-height: 25.2px;"><strong><font
+                size="4"><strong><font size="4"><a href="http://www.reuters.com/news/pictures"
+                                                   target="_blank"><strong><font
+                size="4">Reuters</font></strong></a><strong><font size="4">&nbsp;
+            www.reuters.com/news/</font>pictures</strong></font></strong></font></strong></strong></strong><br
+                style="line-height: 16.8px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><strong style="line-height: 25.2px; font-size: 18px;"><strong><font
+                    size="4"><strong><font size="4"><strong><font size="4"><a href="http://widerimage.reuters.com/"
+                                                                              target="_blank">The Wider Image</a></font></strong><strong><font
+                    size="4">&nbsp;
+                widerimage.reuters.com</font></strong></font></strong></font></strong></strong></strong><br/>
+            <br/>
+            <strong><span style="color: rgb(0, 0, 205);"><em><span
+                    style="font-size: 20px;">Audio</span></em></span><br/>
+                <font size="4"> </font></strong><a
+                href="http://www.npr.org/player/v2/mediaPlayer.html?action=1&amp;t=4&amp;islist=false"
+                target="_blank"><strong><font size="4">NPR</font></strong></a><strong><font size="4">&nbsp; (4:45)
+            www.npr.org/player/v2/mediaPlayer.html?action=1&amp;t=4&amp;islist=false</font></strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://the1a.org/" target="_blank"><strong
+                    style="line-height: 25.2px;">The 1A</strong></a><strong style="line-height: 25.2px;">&nbsp;
+                the1a.org Joshua Johnson and guests M-F 10a-12p WAMU Washington, D.C.</strong><br/>
+                <a href="http://cbsradionewscast.com" target="_blank">CBS Radio News</a>&nbsp; (2:55)</strong><strong
+                style="line-height: 25.2px; font-size: 18px;"> cbsradionewscast.com</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a
+                    href="http://www.stitcher.com/podcast/associated-press/ap-radio-updated-hourly" target="_blank">AP
+                Radio News</a>&nbsp; (3:00)</strong><strong style="line-height: 25.2px; font-size: 18px;">
+            www.stitcher.com/podcast/associated-press/ap-radio-updated-hourly</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a
+                    href="http://www.bbc.co.uk/programmes/p002vsn1/episodes/player" target="_blank">BBC World
+                Service</a>&nbsp; (2:00) www.bbc.co.uk/programmes/p002vsn1/episodes/player</strong><br
+                style="line-height: 16.79px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><strong style="line-height: 25.2px;"><a
+                    href="http://www.bbc.co.uk/programmes/p02dbd4m" target="_blank">BBC World Service Newshour Extra</a>&nbsp;
+                (60:00)</strong><strong style="line-height: 25.2px;">&nbsp;www.bbc.co.uk/programmes/p02dbd4m Owen
+                Bennett Jones and guests:&nbsp;</strong><strong style="line-height: 25.2px;"><strong
+                    style="line-height: 25.2px;">One topic, one hour, once weekly</strong></strong><br/>
+                <a href="http://podcast.cbc.ca/mp3/hourlynews.mp3" target="_blank">CBC Radio News</a>&nbsp;
+                (4:30)</strong><strong style="line-height: 25.2px; font-size: 18px;">
+            podcast.cbc.ca/mp3/hourlynews.mp3</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://feeds.cfr.org/publication/twnw"
+                                                                     target="_blank">The World Next Week</a>&nbsp;
+                (~30:00)</strong><strong style="line-height: 25.2px; font-size: 18px;"> feeds.cfr.org/publication/twnw
+            (CFR, Thursday afternoons)</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a
+                    href="http://www.learnoutloud.com/Podcast-Directory/Politics/Contemporary-Issues/The-Economist-Podcast/28342#3"
+                    target="_blank">The Economist Podcasts</a>&nbsp; (~5:30)</strong><strong
+                style="line-height: 25.2px; font-size: 18px;">&nbsp;www.learnoutloud.com/Podcast-Directory/Politics/Contemporary-Issues/The-Economist-Podcast/28342#3</strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="https://www.dfwworld.org/media/podcasts"
+                                                                     target="_blank">Global I.Q. Minute with Jim
+                Falk</a>&nbsp; (~10:00)</strong><strong style="line-height: 25.2px; font-size: 18px;">&nbsp;www.dfwworld.org/media/2016/podcasts</strong><br
+                style="line-height: 16.8px;"/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.siriusxm.com/potus"
+                                                                     target="_blank">SiriusXM POTUS
+                Politics</a></strong><strong style="line-height: 25.2px; font-size: 18px;">&nbsp;
+            www.siriusxm.com/potus</strong></p>
+        <p>
+            <strong style="line-height: 25.2px; font-size: 18px;"><span style="color: rgb(0, 0, 205);"><em><span
+                    style="font-size: 20px;">Mobile News Applications</span></em></span><br/>
+                <a href="http://www.reuters.com/tools/mobile" target="_blank">Reuters News Pro</a>&nbsp;
+                www.reuters.com/tools/mobile<br/>
+                <a href="http://www.bbc.co.uk/news" target="_blank">BBC News</a>&nbsp; www.bbc.co.uk/news<br/>
+                <a href="http://www.aljazeera.com/mobile" target="_blank">Al Jazeera</a>&nbsp;
+                www.aljazeera.com/mobile<br/>
+                <a href="http://www.npr.org/services/mobile"
+                   target="_blank">NPR </a>&nbsp;www.npr.org/services/mobile<br/>
+                <a href="http://www.ap.org/apmobile" target="_blank">AP Mobile</a>&nbsp; www.ap.org/apmobile<br/>
+                <a href="http://www.cnn.com/mobile" target="_blank">CNN</a>&nbsp; www.cnn.com/mobile<br/>
+                <a href="http://www.economist.com/digital/apps" target="_blank">T</a></strong><strong
+                style="line-height: 25.2px; font-size: 18px;"><a href="http://www.economist.com/digital/apps"
+                                                                 target="_blank">he Economist</a>&nbsp;&nbsp;
+        </strong><strong style="line-height: 25.2px; font-size: 18px;">www.economist.com/digital/apps</strong></p>
+        <p style="line-height: 16.8px;">
+            <strong style="line-height: 25.2px; font-size: 18px;"><strong><span style="color: rgb(0, 0, 205);"><span
+                    style="font-size: 20px;"><em>Timer</em></span></span></strong></strong><br/>
+            <strong style="line-height: 25.2px; font-size: 18px;"><a href="http://www.timeanddate.com/stopwatch/"
+                                                                     target="_blank">Timer</a> &nbsp;www.timeanddate.com/stopwatch/</strong><br/>
+            &nbsp;</p>
+    </div>
+</div>
 </body>
 </html>

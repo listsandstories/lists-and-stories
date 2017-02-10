@@ -1,9 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lists and Stories</title>
+    <title>Lists and Stories</title>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- AngularJS -->
+    <script src="js/angular.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"/>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- W3 -->
+    <script src="js/w3data.js"></script>
+
 </head>
 <body>
-	<h2 style="text-align:center">Lists and Stories</h2>
+
+<div w3-include-html="includes/nav.html"></div>
+
+<script>
+    w3IncludeHTML();
+</script>
+<div class="container-fluid">
+<div class="col-md-8">
+    <h3 style="font-weight: bold;">News & Current Events</h3>
+    <span>Identify and consider source biases when using!</span><br><br>
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;</strong><strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.abc.net.au/news/" target="_blank">ABC</a> (Australia)</strong><br style="line-height: 16.8px;" />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;</strong><strong style="line-height: 1.4; font-size: 18px;"><a href="http://abcnews.go.com/US" target="_blank">ABC</a>&nbsp;(US)</strong><br style="line-height: 16.8px;" />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;</strong><strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.aljazeera.com/news/" target="_blank">Al Jazeera</a>&nbsp;(Qatar)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">- </strong><strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.bbc.com/news" style="line-height: 1.4;" target="_blank">BBC</a>&nbsp;(UK)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;</strong><strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.cbc.ca/news" target="_blank">CBC</a>&nbsp;(Canada)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;</strong><strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.cbsnews.com/" target="_blank">CBS</a>&nbsp;(US)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;<a href="http://www.cnn.com/" target="_blank">CNN</a>&nbsp;(US)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;<a href="http://english.cctv.com/" target="_blank">CCTV</a>&nbsp;(China)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;<a href="http://www.dw.com/" target="_blank">Deutsche Welle</a>&nbsp;(Germany)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">- <a href="http://www.economist.com/" target="_blank">The&nbsp;</a></strong><strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.economist.com/" target="_blank"><span style="line-height: 1.4;">Economist</span></a>&nbsp;(UK)</strong><br style="line-height: 16.8px;" />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;</strong><strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.foxnews.com/" target="_blank">Fox</a>&nbsp;(US)</strong><br style="line-height: 16.8px;" />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;</strong><strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.france24.com/en/" target="_blank">France24</a>&nbsp;(France)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;</strong><strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.nbcnews.com/" target="_blank">NBC</a>&nbsp;(US)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;<a href="http://www.ndtv.com/" target="_blank">NDTV</a>&nbsp;(India)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;<a href="http://www.npr.org/sections/news/" target="_blank">NPR</a>&nbsp;(US)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;</strong><strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.nytimes.com/" target="_blank">NY Times</a>&nbsp;(US)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;<a href="http://www.ozy.com/presidential-daily-brief" target="_blank">Ozy</a>&nbsp;(US)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;</strong><strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.politico.com/" style="line-height: 16.8px;" target="_blank">Politico</a>&nbsp;(US)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;<a href="http://www.pbs.org/show/newshour/" target="_blank">PBS</a>&nbsp;(US)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">- </strong><strong style="line-height: 1.4; font-size: 18px;"><a href="http://www.reuters.com/" target="_blank">Reuters</a>&nbsp;(US)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;</strong><strong style="line-height: 1.4; font-size: 18px;"><a href="https://www.rt.com/" target="_blank">RT</a>&nbsp;(Russia)</strong><br style="line-height: 16.8px;" />
+    <strong style="line-height: 1.4; font-size: 18px;">-&nbsp;</strong><strong style="line-height: 1.4; font-size: 18px;"><a href="https://www.washingtonpost.com/?hpid=hp_no-name_no-name%3Ahomepage%2Fmasthead" target="_blank">Washington Post</a>&nbsp;(US)</strong><br />
+    <strong style="line-height: 1.4; font-size: 18px;">- <a href="http://theweek.com/" target="_blank">The Week</a>&nbsp;(US)</strong></p>
+</div>
+<div class="col-md-4">Has a big parrot</div>
+</div>
 </body>
 </html>
