@@ -37,5 +37,5 @@ exclude_paths:
   - css/bootstrap-theme.css
 
   # examples of minified files that should be excluded
-  - **.min.js
-  - **.min.css
+  - js/**.min.js
+  - css/**.min.css
